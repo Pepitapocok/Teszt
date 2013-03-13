@@ -1,0 +1,733 @@
+
+<!doctype html>
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+
+  <meta charset="utf-8" />
+  <title>Vidékjáró</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/mCustomScrollbar.css" />
+  <link rel="stylesheet" href="css/colors.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/articleboxes.css" />
+
+
+  <!-- scripts at bottom of page -->
+
+
+
+</head>
+<body class="openedSnippet">
+    <header id="header">
+        <div class="centerize">
+          <a href="#" onClick="window.location.reload( true );"><img src="img/logo.png" alt="Vidékjáró" title="Vidékjáró" class=logo /></a>
+          <section class="socialIcons"></section>
+          <section class="secondaryNav">
+            <ul>
+              <li class="shop"><a href="#">SHOP</a></li>
+              <li class="kategoriak selected"><a href="#">KATEGÓRIÁK</a></li>
+              <li class="terkep"><a href="#">TÉRKÉP</a></li>
+              <li class="kereso"><a href="#">KERESŐ</a></li>
+              <li class="account"><a href="#">my account</a></li>
+            </ul>
+          </section>
+        </div>
+    </header>
+  <div class="centerize">
+    <aside id="sidebar">
+      <section class="holderBox">
+          <ul>
+            <li class="home"><a href="#">HOME</a>
+            <li class="kedvenceim"><a href="#">KEDVENCEIM</a>
+            <li class="konyvjelzo last"><a href="#">KÉSŐBB MEGNÉZEM</a>
+          </ul>
+      </section>
+
+      <section class="holderBox">
+          <h2>Online SZÉP Kártya</h2>
+          <input type="text" />
+          <img class="bankIcon" src="img/icon_mkb.png" />
+          <img class="bankIcon" src="img/icon_kh.png" />
+          <img class="bankIcon last" src="img/icon_otp.png" />
+      </section>
+
+      <section class="holderBox">
+        <h2>Ajánlott kategóriák</h2>
+          <ul>
+            <li class="kategoria"><a href="#">AKCIÓS AJÁNLATOK</a>
+            <li class="kategoria"><a href="#">PROGRAMOK</a>
+            <li class="kategoria"><a href="#">TEMATIKUS NAPOK</a>
+            <li class="kategoria last"><a href="#">ÖKOTIPP</a>
+          </ul>
+      </section>
+
+      <section class="holderBox">
+        <h2>Íratkozz fel hírlevelünkre</h2>
+        <form>
+          <input type="text" />
+          <div class="newsFreqHolder">
+            <div class="newsFreq">
+              <input type="checkbox" name="heti" id="heti" class="styled" /><label for="heti">Hetente</label>
+            </div>
+            <div class="newsFreq">
+              <input type="checkbox" name="havi" id="havi" class="styled" /><label for="havi">Havonta</label>
+            </div>
+          </div>
+          <input type="submit" value="Feliratkozom">
+        </form>
+      </section>
+    </aside> <!-- #sidebar -->
+
+    <section id="content">
+      <section id="options" class="clearfix">
+        <div class="option-combo optionsMainmenu">
+          <ul id="filter" class="option-set clearfix" data-option-key="filter">
+            <li class="lightBgSzallas szallas" data-option-value=".szallas"><a href="#" class="darkBgSzallas">SZÁLLÁS</a></li>
+            <li class="lightBgVendeglatas vendeglatas" data-option-value=".vendeglatas"><a href="#vendeglatas" class="darkBgVendeglatas">VENDÉGLÁTÁS</a></li>
+            <li class="lightBgSzabadido szabadido" data-option-value=".szabadido"><a href="#szabadido" class="darkBgSzabadido">SZABADIDŐ</a></li>
+            <li class="lightBgHelyiTermekek helyiTermekek" data-option-value=".helyiTermekek"><a href="#helyiTermekek" class="darkBgHelyiTermekek">HELYI TERMÉKEK</a></li>
+            <li class="lightBgOko oko" data-option-value=".oko"><a href="#oko" class="darkBgOko">ÖKO</a></li>
+          </ul>
+        </div>
+        <div class="option-combo optionsSubmenu">
+          <ul id="filter" class="option-set clearfix" data-option-key="filter">
+            <li id="szallas" data-option-value=".szallas" class="lightBgSzallas szallas submenuMainItem selected">
+              <div class="backToHome"></div>
+              <a href="#">SZÁLLÁS</a>
+              <ul>
+                <li><a href="#_ettermek">ÉTTERMEK</a></li>
+                <li><a href="#_csardak">CSÁRDÁK</a></li>
+                <li><a href="#_fogadok">FOGADÓK</a></li>
+                <li><a href="#_boraszatok">BORÁSZATOK</a></li>
+              </ul>
+            </li>
+            <li id="vendeglatas" data-option-value=".vendeglatas" class="lightBgVendeglatas vendeglatas submenuMainItem">
+              <div class="backToHome"></div>
+              <a href="#vendeglatas">VENDÉGLÁTÁS</a>
+              <ul>
+                <li><a href="#_ettermek">ÉTTERMEK</a></li>
+                <li><a href="#_csardak">CSÁRDÁK</a></li>
+                <li><a href="#_fogadok">FOGADÓK</a></li>
+                <li><a href="#_boraszatok">BORÁSZATOK</a></li>
+              </ul>
+            </li>
+            <li id="szabadido" data-option-value=".szabadido" class="lightBgSzabadido szabadido submenuMainItem">
+              <div class="backToHome"></div>
+              <a href="#szabadido">SZABADIDŐ</a>
+              <ul>
+                <li><a href="#_ettermek">ÉTTERMEK</a></li>
+                <li><a href="#_csardak">CSÁRDÁK</a></li>
+                <li><a href="#_fogadok">FOGADÓK</a></li>
+                <li><a href="#_boraszatok">BORÁSZATOK</a></li>
+              </ul>
+            </li>
+            <li id="helyiTermekek" data-option-value=".helyiTermekek" class="lightBgHelyiTermekek helyiTermekek submenuMainItem">
+              <div class="backToHome"></div>
+              <a href="#helyiTermekek">HELYI TERMÉKEK</a>
+              <ul>
+                <li><a href="#_ettermek">ÉTTERMEK</a></li>
+                <li><a href="#_csardak">CSÁRDÁK</a></li>
+                <li><a href="#_fogadok">FOGADÓK</a></li>
+                <li><a href="#_boraszatok">BORÁSZATOK</a></li>
+              </ul>
+            </li>
+            <li id="oko" data-option-value=".oko" class="lightBgOko oko submenuMainItem">
+              <div class="backToHome"></div>
+              <a href="#oko">ÖKO</a>
+              <ul>
+                <li><a href="#_ettermek">ÉTTERMEK</a></li>
+                <li><a href="#_csardak">CSÁRDÁK</a></li>
+                <li><a href="#_fogadok">FOGADÓK</a></li>
+                <li><a href="#_boraszatok">BORÁSZATOK</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    <div id="container" class="super-list variable-sizes clearfix">
+
+      <article class="articleBox szallas largeSize" data-category="szallas">
+        <div class="shadow">
+            <div class="snippetGallery">
+                <img src="galleries/00001/slide-1.jpg" width="470" height="270" alt="Slide 1" />
+                <img src="galleries/00001/slide-2.jpg" width="470" height="270" alt="Slide 2" />
+                <img src="galleries/00001/slide-3.jpg" width="470" height="270" alt="Slide 3" />
+                <img src="galleries/00001/slide-4.jpg" width="470" height="270" alt="Slide 4" />
+                <a class="slidesjs-previous slidesjs-navigation" href="#" title="Previous"></a>
+                <a class="slidesjs-next slidesjs-navigation" href="#" title="Next"></a>
+            </div>
+            <div class="label">LABEL</div>
+          <div class="articleBoxContent">
+            <div class="articleBoxContentTop"><div class="lightBgSzallas caption">CAPTION</div></div>
+            <h1>szallas</h1>
+            <div class="ratess"></div>
+            <div class="contentScroll">
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd. Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd. Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd. Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd.</p>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd. Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd. Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd. Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd.</p>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd. Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd. Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd. Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd.</p>
+            </div>
+          </div>
+          <div class="orders">
+            <div class="lightBgSzallas orderTitle">Foglalás</div>
+            <div class="orderForm">
+              <form>
+                <div>
+                  <label>Érkezés</label>
+                  <input />
+                </div>
+                <div>
+                  <label>Távozás</label>
+                  <input />
+                </div>
+                <div>
+                  <select>
+                    <option>Fő</option>
+                    <option>1 Fő</option>
+                    <option>2 Fő</option>
+                    <option>3 Fő</option>
+                    <option>4 Fő</option>
+                  </select>
+                </div>
+                <div>
+                  <button>Kosárba</button>
+                </div>
+              </form>
+            </div>
+            <div class="commentsHolder">
+              <h2>Hozzászólások</h2>
+            </div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+            TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+      <article class="articleBox szallas " data-category="szallas">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic2.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgSzallas activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgSzallas caption">CAPTION</div></div>
+              <h1 class="lightColorHelyiSzallas">szallas</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox szallas " data-category="szallas">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic2.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgSzallas activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgSzallas caption">CAPTION</div></div>
+              <h1 class="lightColorHelyiSzallas">szallas</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox szallas largeSize" data-category="szallas">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic1.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgSzallas activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgSzallas caption">CAPTION</div></div>
+              <h1 class="lightColorHelyiSzallas">szallas</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox szallas largeSize " data-category="szallas">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic1.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgSzallas activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgSzallas caption">CAPTION</div></div>
+              <h1 class="lightColorHelyiSzallas">szallas</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox szallas " data-category="szallas">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic3.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgSzallas activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgSzallas caption">CAPTION</div></div>
+              <h1 class="lightColorHelyiSzallas">szallas</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox szallas" data-category="szallas">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic2.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgSzallas activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgSzallas caption">CAPTION</div></div>
+              <h1 class="lightColorHelyiSzallas">szallas</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+            TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox helyiTermekek" data-category="helyiTermekek">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic2.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgHelyiTermekek activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgHelyiTermekek caption">CAPTION</div></div>
+              <h1 class="lightColorHelyiTermekek">helyiTermekek</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox helyiTermekek largeSize" data-category="helyiTermekek">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic1.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgHelyiTermekek activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgHelyiTermekek caption">CAPTION</div></div>
+              <h1 class="lightColorHelyiTermekek">helyiTermekek</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox helyiTermekek" data-category="helyiTermekek">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic2.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgHelyiTermekek activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgHelyiTermekek caption">CAPTION</div></div>
+              <h1 class="lightColorHelyiTermekek">helyiTermekek</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox vendeglatas " data-category="vendeglatas">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic2.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgVendeglatas activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgVendeglatas caption">CAPTION</div></div>
+              <h1 class="lightColorVendeglatas">vendeglatas</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox vendeglatas " data-category="vendeglatas">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic3.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgVendeglatas activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgVendeglatas caption">CAPTION</div></div>
+              <h1 class="lightColorVendeglatas">vendeglatas</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox vendeglatas " data-category="vendeglatas">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic2.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgVendeglatas activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgVendeglatas caption">CAPTION</div></div>
+              <h1 class="lightColorVendeglatas">vendeglatas</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox oko largeSize" data-category="oko">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic1.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgOko activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgOko caption">CAPTION</div></div>
+              <h1 class="lightColorOko">oko</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox oko largeSize" data-category="oko">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic1.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgOko activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgOko caption">CAPTION</div></div>
+              <h1 class="lightColorOko">oko</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox oko " data-category="oko">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic2.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgOko activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgOko caption">CAPTION</div></div>
+              <h1 class="lightColorOko">oko</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox oko " data-category="oko">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic2.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgOko activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgOko caption">CAPTION</div></div>
+              <h1 class="lightColorOko">oko</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+      <article class="articleBox oko " data-category="oko">
+        <div class="shadow">
+          <div class="image">
+            <img src="img/nopic2.png" />
+            <div class="label">LABEL</div>
+            <div class="lightBgOko activeLayer"><span>MEGNÉZEM</span></div>
+          </div>
+          <div class="articleBoxContent">
+              <div class="articleBoxContentTop"><div class="lightBgOko caption">CAPTION</div></div>
+              <h1 class="lightColorOko">oko</h1>
+              <p>Lorem ipsum dolorsit amet, fdsdéfj sédjfésj ksékfjsékjfsnfl sl fsdjl fjsld kjlsd</p>
+          </div>
+          <div class="socialFunctions">
+            <div class="likes">10</div>
+            <div class="comments">23</div>
+            <div class="rates"></div>
+          </div>
+        </div>
+        <div class="articleBoxTag">
+          TAG 1, TAG 2, TAG 3
+        </div>
+      </article>
+
+    </div>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script>
+    $(function(){
+
+      var $container = $('#container');
+
+      $container.isotope({
+        masonry: {
+          columnWidth: 230,
+          gutterWidth: 10
+        },
+        sortBy: 'original-order',
+        getSortData: {
+          number: function( $elem ) {
+            var number = $elem.hasClass('articleBox') ?
+              $elem.find('.number').text() :
+              $elem.attr('data-number');
+            return parseInt( number, 10 );
+          },
+          alphabetical: function( $elem ) {
+            var name = $elem.find('.name'),
+                itemText = name.length ? name : $elem;
+            return itemText.text();
+          }
+        }
+      });
+
+
+      var $optionSets = $('#options .option-set'),
+          $optionLinks = $optionSets.find('li');
+
+      $optionLinks.click(function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ($this.hasClass('selected')) {
+					a=0;
+					$('.submenuMainItem:not(".selected")').fadeIn().each(function(i){
+                                                a+=58;
+						$(this).find('ul').hide();
+						$(this).css("top", (a) + 'px');	 
+					});
+					return false;
+        }
+        var $optionSet = $this.parents('.option-set');
+				$('#options').find('.selected').removeClass('selected');
+        $o=($this.attr('data-option-value').replace('.','#'));
+				$($o).addClass('selected').css('top','0px').find('ul').show();
+				if ($this.hasClass('submenuMainItem')) {
+					$('.submenuMainItem:not(".selected")').hide();
+				
+				}
+        // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        var options = {},
+            key = $optionSet.attr('data-option-key'),
+            value = $this.attr('data-option-value');
+        // parse 'false' as false boolean
+        value = value === 'false' ? false : value;
+        options[ key ] = value;
+        if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+          // changes in layout modes need extra logic
+          changeLayoutMode( $this, options )
+        } else {
+          // otherwise, apply new options
+          $container.isotope( options );
+        }
+
+        return false;
+      });
+    });
+
+  // Modified Isotope methods for gutters in masonry
+    $.Isotope.prototype._getMasonryGutterColumns = function() {
+      var gutter = this.options.masonry && this.options.masonry.gutterWidth || 0;
+      containerWidth = this.element.width();
+
+      this.masonry.columnWidth = this.options.masonry && this.options.masonry.columnWidth ||
+      // Or use the size of the first item
+      this.$filteredAtoms.outerWidth(true) ||
+      // If there's no items, use size of container
+      containerWidth;
+
+      this.masonry.columnWidth += gutter;
+
+      this.masonry.cols = Math.floor((containerWidth + gutter) / this.masonry.columnWidth);
+      this.masonry.cols = Math.max(this.masonry.cols, 1);
+    };
+
+    $.Isotope.prototype._masonryReset = function() {
+      // Layout-specific props
+      this.masonry = {};
+      // FIXME shouldn't have to call this again
+      this._getMasonryGutterColumns();
+      var i = this.masonry.cols;
+      this.masonry.colYs = [];
+      while (i--) {
+        this.masonry.colYs.push(0);
+      }
+    };
+
+    $.Isotope.prototype._masonryResizeChanged = function() {
+      var prevSegments = this.masonry.cols;
+      // Update cols/rows
+      this._getMasonryGutterColumns();
+      // Return if updated cols/rows is not equal to previous
+      return (this.masonry.cols !== prevSegments);
+    };
+  </script>
+
+
+    <footer>
+    </footer>
+
+  </section> <!-- #content -->
+
+  <!--<script type="text/javascript" src="//use.typekit.net/ote3krw.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
+  <script defer src="js/jquery.flexverticalcenter.js"></script>
+  <script defer src="js/custom-form-elements.js"></script>
+  <script defer src="js/jquery.raty.min.js"></script>
+  <script defer src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script defer src="js/jquery.slides.min.js"></script>
+  <script defer src="js/snippets.js"></script>
+  
+
+</body>
+</html>

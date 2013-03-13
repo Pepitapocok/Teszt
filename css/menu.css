@@ -1,0 +1,286 @@
+/**** MAIN MENU HOME ****/
+
+.optionsMainmenu {
+  height: 169px;
+  margin-bottom: 10px;
+}
+
+.optionsMainmenu ul {
+  margin: 0;
+  list-style: none;
+}
+
+.optionsMainmenu li {
+  float: left;
+  width: 190px;
+  text-align: center;
+  -webkit-transition: background-position 200ms ease;
+     -moz-transition: background-position 200ms ease;
+       -o-transition: background-position 200ms ease;
+          transition: background-position 200ms ease;
+  cursor: pointer;
+  background-position: center 40px;
+  background-repeat: no-repeat;
+}
+
+.optionsMainmenu li:hover{
+  background-position: center center;
+  -webkit-transition: background-position 200ms ease;
+     -moz-transition: background-position 200ms ease;
+       -o-transition: background-position 200ms ease;
+          transition: background-position 200ms ease;
+}
+
+.optionsMainmenu li a {
+  height: 30px;
+  margin-top: 126px;
+  padding: 13px 0 0 0 ;
+  display: block;
+  color: #fff;
+}
+
+
+
+.optionsMainmenu .szallas{
+  background-image: url("../img/mainmenu_szallas.png");
+}
+
+.optionsMainmenu .vendeglatas{
+  background-image: url("../img/mainmenu_vendeglatas.png");
+}
+
+.optionsMainmenu .szabadido{
+  background-image: url("../img/mainmenu_szabadido.png");
+}
+
+.optionsMainmenu .helyiTermekek{
+  background-image: url("../img/mainmenu_helyitermek.png");
+}
+
+.optionsMainmenu .oko{
+  background-image: url("../img/mainmenu_oko.png");
+}
+
+
+/**** MAIN MENU SUBPAGE ****/
+
+.optionsSubmenu{
+  height: 58px;
+  margin-bottom: 20px;
+  position: relative;
+  background: #fff;
+}
+
+.optionsSubmenu ul {
+  width: 950px;
+  float: left;
+  position: absolute;
+  z-index: 10;
+  margin: 0;
+  list-style: none;
+}
+
+.optionsSubmenu ul .submenuMainItem {
+  display: none;
+  width: 220px;
+  margin-left: 30px;
+  height: 58px;
+  text-align: left;
+  background-position: 40px center;
+  background-repeat: no-repeat;
+  -moz-opacity: 0.90;
+  opacity: 0.90;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=90);
+  position: absolute;
+  
+}
+
+.optionsSubmenu ul .submenuMainItem.selected {
+  display: block;
+  position: absolute;
+  height: 58px;
+  width: 250px;
+  top: 0px;
+  margin-left: 0px;
+}
+
+.optionsSubmenu ul .submenuMainItem .backToHome{
+  display: none;
+  width: 30px;
+  height: 58px;
+  float: left;
+}
+
+.optionsSubmenu ul li.selected .backToHome{
+  display: block;
+  background: rgba(0,0,0, 0.2)
+}
+
+.optionsSubmenu .szallas{
+  background-image: url("../img/submenu_szallas.png");
+}
+.optionsSubmenu .szallas:hover{
+  
+}
+
+.optionsSubmenu .vendeglatas{
+  background-image: url("../img/submenu_vendeglatas.png");
+}
+.optionsSubmenu .vendeglatas:hover{
+}
+
+.optionsSubmenu .szabadido{
+  background-image: url("../img/submenu_szabadido.png");
+}
+.optionsSubmenu .szabadido:hover{
+}
+
+.optionsSubmenu .helyiTermekek{
+  background-image: url("../img/submenu_helyitermek.png");
+}
+.optionsSubmenu .helyiTermekek:hover{
+}
+
+.optionsSubmenu .oko{
+  background-image: url("../img/submenu_oko.png");
+}
+.optionsSubmenu .oko:hover{
+}
+
+
+.optionsSubmenu ul .submenuMainItem a,
+.optionsSubmenu ul .submenuMainItem span{
+  display: block;
+  height: 23px;
+  padding: 20px 20px 15px 75px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.optionsSubmenu ul .submenuMainItem ul {
+  float: left;
+  clear: both;
+  position: absolute;
+  width: 670px;
+  top: 0px;
+  left: 250px;
+  display: none;
+}
+
+.optionsSubmenu ul .submenuMainItem ul li{
+  float: left;
+  width: auto;
+  display: block;
+}
+
+.optionsSubmenu ul .submenuMainItem ul li a{
+  color: #333;
+  background: none;
+  padding: 20px 20px 15px 20px;
+  font-size: 14px;
+}
+
+.optionsSubmenu ul .submenuMainItem ul li a:hover{
+  color: #333;
+  padding: 20px 20px 15px 20px;
+  font-size: 14px;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+}
+
+.submenuMainItem.szallas ul li a:hover{
+  background: rgba(228,87,82, 0.1);
+  border-bottom-color: rgba(228,87,82, 0.9);
+}
+
+.submenuMainItem.vendeglatas ul li a:hover{
+  background:  rgba(250, 173, 63, 0.1);
+  border-bottom-color: rgba(250, 173, 63, 0.9);
+}
+
+.submenuMainItem.szabadido ul li a:hover{
+  background:  rgba(95, 190, 95, 0.1);
+  border-bottom-color: rgba(95, 190, 95, 0.9);
+}
+
+.submenuMainItem.helyiTermekek ul li a:hover{
+  background:  rgba(82, 184, 214, 0.1);
+  border-bottom-color: rgba(82, 184, 214, 0.9);
+}
+
+.submenuMainItem.oko ul li a:hover{
+  background:  rgba(190, 95, 142, 0.1);
+  border-bottom-color: rgba(190, 95, 142, 0.9); 
+}
+
+
+/**** SECONDARY MENU ****/
+
+.secondaryNav{
+  float: left;
+  clear: both;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.secondaryNav ul{
+  
+}
+
+.secondaryNav ul li{
+  float: left;
+  width: 80px;
+  height: 82px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.secondaryNav ul li.selected{
+  background: url("../img/secondary-arrow.png") center bottom no-repeat;
+}
+
+.secondaryNav ul li a{
+  display: block;
+  width: 80px;
+  height: 18px;
+  padding-top: 22px;
+  color: #333;
+  font-size: 11px;
+  -webkit-transition: background-position 200ms ease;
+     -moz-transition: background-position 200ms ease;
+       -o-transition: background-position 200ms ease;
+          transition: background-position 200ms ease;
+  
+}
+
+.secondaryNav ul li.shop a{
+  background: url("../img/secondary_shop.png") center top no-repeat;
+}
+
+.secondaryNav ul li.kategoriak a{
+  background: url("../img/secondary_kategoriak.png") center top no-repeat;
+}
+
+.secondaryNav ul li.terkep a{
+  background: url("../img/secondary_terkep.png") center top no-repeat;
+}
+
+.secondaryNav ul li.kereso a{
+  background: url("../img/secondary_kereso.png") center top no-repeat;
+}
+
+.secondaryNav ul li.account a{
+  background: url("../img/secondary_account.png") center top no-repeat;
+}
+
+.secondaryNav ul li a:hover{
+  background-position: center 3px;
+  -webkit-transition: background-position 200ms ease;
+     -moz-transition: background-position 200ms ease;
+       -o-transition: background-position 200ms ease;
+          transition: background-position 200ms ease;
+  color: #f66;
+}

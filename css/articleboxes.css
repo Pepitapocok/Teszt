@@ -1,0 +1,272 @@
+/** ARTICLE BOXES **/
+
+.articleBox {
+  width: 230px;
+  margin-bottom: 10px;
+  position: relative;
+  color: #333;
+}
+
+.articleBox .shadow{
+  -webkit-box-shadow:  0px 0px 10px 0px rgba(153, 153, 153, 0.7);
+          box-shadow:  0px 0px 10px 0px rgba(153, 153, 153, 0.7);
+}
+
+.articleBox .image{
+  position: relative;
+}
+
+.articleBox img{
+  margin: 0px;
+  padding: 0px;
+}
+
+.articleBox .activeLayer{
+  display: none;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.articleBox .activeLayer span{
+  background-image: url("../img/megnezem.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 22px;
+  padding-top: 50px;
+  position: absolute;
+  top: 20%;
+  color: #fff;
+  text-align: center;
+}
+
+.articleBox.largeSize .activeLayer span{
+  top: 35%;
+}
+
+.articleBox .label{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 1px 10px 0 40px;
+  text-align: center;
+  background: #fff url("../img/labels.png") left 0px no-repeat;
+  height: 23px;
+  width: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 11;
+}
+
+.articleBox.szallas .label{
+  background: #fff url("../img/labels.png") left 0px no-repeat;
+}
+.articleBox.vendeglatas .label{
+  background: #fff url("../img/labels.png") left -25px no-repeat;
+}
+.articleBox.szabadido .label{
+  background: #fff url("../img/labels.png") left -50px no-repeat;
+}
+.articleBox.helyiTermekek .label{
+  background: #fff url("../img/labels.png") left -75px no-repeat;
+}
+.articleBox.oko .label{
+  background: #fff url("../img/labels.png") left -100px no-repeat;
+}
+
+.articleBoxContent h1{
+  font-family: "museo-slab 700",arial;
+  font-size: 16px;
+}
+
+.articleBoxContent{
+  position: relative;
+  padding: 10px 20px;
+  margin-top: -7px;
+  background: #fff;
+}
+
+.articleBoxContent p{
+  font-family: "museo-sans 500",arial;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.articleBoxContentTop{
+  background: url("../img/imageArrow.png") 12px top no-repeat;
+  height: 32px;
+  width: 100%;
+  position: absolute;
+  top: -8px;
+  left: 0px;
+}
+
+.articleBoxContentTop .caption{
+  width: 113px;
+  height: 22px;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  padding: 5px 10px;
+}
+
+.socialFunctions{
+  clear: both;
+  height: 35px;
+  padding: 0px;
+  background: #fff;
+  font-size: 10px;
+}
+
+.socialFunctions .likes{
+  float: left;
+  background: #F3F3F3 url("../img/icon_like.png") 10px 14px no-repeat;
+  width: 13px;
+  height: 19px;
+  padding: 8px 5px 8px 32px;
+  margin-right: 1px;
+}
+
+.socialFunctions .comments{
+  float: left;
+  background: #F3F3F3 url("../img/icon_comment.png") 10px 14px no-repeat;
+  width: 13px;
+  height: 19px;
+  padding: 8px 5px 8px 32px;
+}
+
+.socialFunctions .rates{
+  float: left;
+  padding: 8px 10px 7px 10px;
+  width: 50px;
+  height: 35px;
+}
+
+
+.articleBoxTag{
+  position: relative;
+  height: 40px;
+  padding: 0px 10px 0px 35px;
+  margin-top: 1px;
+  background: #fff url("../img/icon_tags.png") 10px center no-repeat;
+  font-family: "museo-sans 500",arial;
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+
+
+
+
+/** OPENED SNIPPET **/
+
+.openedSnippet .rates{
+  float: left;
+  padding: 8px 10px 7px 10px;
+  width: 50px;
+  height: 35px;
+
+}
+
+.openedSnippet .contentScroll{
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail{
+  width: 7px;
+  height: 100%;
+  margin: 0 auto;
+  background: #F5F5F5;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+}
+.mCSB_scrollTools .mCSB_dragger{
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  width: 7px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: #999999;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+}
+
+.openedSnippet .snippetGallery{
+  
+  position: relative;
+}
+
+.openedSnippet .snippetGallery img{
+  z-index: 0 !important;
+}
+
+.openedSnippet .snippetGallery .slidesjs-navigation {
+  margin-top:3px;
+}
+
+.openedSnippet .snippetGallery .slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+.openedSnippet .snippetGallery .slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
+.openedSnippet .snippetGallery a.slidesjs-navigation{
+  position: absolute;
+  top: 110px;
+  display: block;
+  height: 39px;
+  width: 39px;
+  z-index: 20;
+  margin:0px;
+  -moz-opacity: 0.70;
+  opacity: 0.70;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+}
+
+.openedSnippet .snippetGallery a.slidesjs-navigation:hover{
+  moz-opacity: 1;
+  opacity: 1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+}
+
+.openedSnippet .snippetGallery a.slidesjs-previous{
+  background: url("../img/galleryArrowLeft.png") center center no-repeat;
+  left: 10px;
+}
+
+.openedSnippet .snippetGallery a.slidesjs-next{
+  right: 10px;
+  background: url("../img/galleryArrowRight.png") center center no-repeat;
+}
+
+.openedSnippet .orders{
+  clear: both;
+  background: #fff;
+  position: relative;
+  width: 100%;
+}
+
+.openedSnippet .orders .orderTitle{
+  display: inline-block;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.variable-sizes .articleBox.largeSize { width: 470px; }
